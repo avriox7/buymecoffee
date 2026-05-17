@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-5 text-gray-800">
+
+  <div class="w-full max-w-md bg-white border border-gray-200 rounded-3xl shadow-xl p-6">
+
+    <div class="text-center">
+
+      <div class="w-16 h-16 mx-auto bg-orange-100 rounded-2xl flex items-center justify-center mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-8 h-8 text-orange-500">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 8h8a4 4 0 110 8H8V8z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 8v8" />
+        </svg>
+      </div>
+
+      <h1 class="text-3xl font-bold">Support Developer</h1>
+
+      <p class="text-gray-500 mt-3 text-sm leading-6">
+        This app was built for our community and Upazila.<br>
+        If you like this project, you can support development and server costs ❤️
+      </p>
+    </div>
+
+    <div class="mt-8 space-y-4">
+
+      <div class="bg-pink-50 rounded-2xl p-4 border border-pink-100 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+
+          <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-500">
+              <path d="M12 2L2 7l10 5 10-5-10-5zm0 7L2 4v13l10 5 10-5V4l-10 5z" />
+            </svg>
+          </div>
+
+          <div>
+            <p class="text-pink-600 font-semibold text-lg">BKash</p>
+            <p class="text-gray-600 mt-1">01XXXXXXXXX</p>
+          </div>
+
+        </div>
+
+        <button onclick="copyText('01XXXXXXXXX')"
+          class="bg-pink-500 hover:bg-pink-600 text-white transition px-4 py-2 rounded-xl text-sm font-medium">
+          Copy
+        </button>
+      </div>
+
+      <div class="bg-orange-50 rounded-2xl p-4 border border-orange-100 flex items-center justify-between">
+
+        <div class="flex items-center gap-3">
+
+          <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-6 h-6 text-orange-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25h18M3 12h18m-18 3.75h18" />
+            </svg>
+          </div>
+
+          <div>
+            <p class="text-orange-600 font-semibold text-lg">Nagad</p>
+            <p class="text-gray-600 mt-1">01XXXXXXXXX</p>
+          </div>
+
+        </div>
+
+        <button onclick="copyText('01XXXXXXXXX')"
+          class="bg-orange-500 hover:bg-orange-600 text-white transition px-4 py-2 rounded-xl text-sm font-medium">
+          Copy
+        </button>
+      </div>
+
+    </div>
+
+    <div class="mt-8 bg-blue-50 border border-blue-100 rounded-2xl p-5">
+
+      <div class="flex items-start gap-3">
+
+        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-6 h-6 text-blue-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-blue-700 text-lg">Payment Instruction</h3>
+
+          <p class="text-gray-600 text-sm leading-6 mt-2">
+            Please send money using <span class="font-semibold">Send Money</span> option.
+            <br>
+            Write your name or app name in the reference/message section after payment.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mt-8 grid grid-cols-3 gap-3">
+
+     
+
+    </div>
+
+    <div class="mt-8 text-center text-xs text-gray-400 leading-5">
+      Thank you for supporting this project ❤️
+    </div>
+
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text);
+      alert('Number copied successfully!');
+    }
+  </script>
+
+</body>
+</html>
