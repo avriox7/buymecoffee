@@ -1,118 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-5 text-gray-800">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  
+  <title>Support Blood Donation Mission</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Hind Siliguri Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      font-family: 'Hind Siliguri', sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to bottom right, #f8fafc, #eef2ff);
+    }
+
+    .glass{
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.8);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-5 text-gray-800">
+
+  <div class="max-w-xl w-full glass rounded-[32px] shadow-2xl border border-white/50 p-6">
+
+    <!-- Header -->
 
     <div class="text-center">
 
-      
+       
 
-      <h1 class="text-3xl font-bold">Support Developer</h1>
+      <h1 class="text-3xl font-bold mt-5 text-gray-900">
+        আমাদের এই উদ্যোগে পাশে থাকুন 
+      </h1>
 
-      <p class="text-gray-500 mt-3 text-sm leading-6">
-        This app was built for our community and Upazila.<br>
-        If you like this project, you can support development and server costs ❤️
+      <p class="text-gray-600 mt-5 leading-8 text-[15px]">
+
+        এই প্ল্যাটফর্মটি তৈরি করা হয়েছে জরুরি মুহূর্তে দ্রুত রক্তদাতা খুঁজে পেতে সাহায্য করার জন্য।
+       আমাদের লক্ষ্য হলো মানুষকে সহজে রক্ত খুঁজে পাওয়ার সুযোগ করে দেওয়া এবং আরও বেশি মানুষকে রক্তদানে উৎসাহিত করা।
+        <br>
+        অ্যাপটি সবার জন্য সম্পূর্ণ ফ্রি রাখার চেষ্টা করা হচ্ছে।
+        তবে সার্ভার, রক্ষণাবেক্ষণ, নতুন ফিচার এবং ভবিষ্যতে Google Play Store-এ প্রকাশ করার জন্য কিছু খরচ প্রয়োজন হয়।
+       
+        আপনার ছোট্ট একটি সহযোগিতাও এই জীবন বাঁচানোর উদ্যোগকে আরও এগিয়ে নিতে সাহায্য করবে।
+
       </p>
+
     </div>
+
+    <!-- Donation Cards -->
 
     <div class="mt-8 space-y-4">
 
-      <div class="bg-pink-50 rounded-2xl p-4 border border-pink-100 flex items-center justify-between">
-        <div class="flex items-center gap-3">
+      <!-- BKash -->
 
-          <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-500">
+      <div class="bg-pink-50 rounded-3xl p-5 border border-pink-100 flex items-center justify-between shadow-sm">
+
+        <div class="flex items-center gap-4">
+
+          <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-7 h-7 text-pink-500">
+
               <path d="M12 2L2 7l10 5 10-5-10-5zm0 7L2 4v13l10 5 10-5V4l-10 5z" />
             </svg>
+
           </div>
 
           <div>
-            <p class="text-pink-600 font-semibold text-lg">BKash</p>
-            <p class="text-gray-600 mt-1">01319053306</p>
+            <p class="text-pink-600 font-bold text-xl">
+              bKash
+            </p>
+
+            <p class="text-gray-700 mt-1 text-lg">
+              01319053306
+            </p>
           </div>
 
         </div>
 
         <button onclick="copyText('01319053306')"
-          class="bg-pink-500 hover:bg-pink-600 text-white transition px-4 py-2 rounded-xl text-sm font-medium">
+          class="bg-pink-500 hover:bg-pink-600 active:scale-95 transition text-white px-5 py-3 rounded-2xl text-sm font-semibold shadow-md">
+
           Copy
+
         </button>
+
       </div>
 
-      <div class="bg-orange-50 rounded-2xl p-4 border border-orange-100 flex items-center justify-between">
+      <!-- Nagad -->
 
-        <div class="flex items-center gap-3">
+      <div class="bg-orange-50 rounded-3xl p-5 border border-orange-100 flex items-center justify-between shadow-sm">
 
-          <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-6 h-6 text-orange-500">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25h18M3 12h18m-18 3.75h18" />
+        <div class="flex items-center gap-4">
+
+          <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.8"
+              stroke="currentColor"
+              class="w-7 h-7 text-orange-500">
+
+              <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 8.25h18M3 12h18m-18 3.75h18" />
+
             </svg>
+
           </div>
 
           <div>
-            <p class="text-orange-600 font-semibold text-lg">Nagad</p>
-            <p class="text-gray-600 mt-1">01319053306</p>
+
+            <p class="text-orange-600 font-bold text-xl">
+              Nagad
+            </p>
+
+            <p class="text-gray-700 mt-1 text-lg">
+              01319053306
+            </p>
+
           </div>
 
         </div>
 
         <button onclick="copyText('01319053306')"
-          class="bg-orange-500 hover:bg-orange-600 text-white transition px-4 py-2 rounded-xl text-sm font-medium">
+          class="bg-orange-500 hover:bg-orange-600 active:scale-95 transition text-white px-5 py-3 rounded-2xl text-sm font-semibold shadow-md">
+
           Copy
+
         </button>
+
       </div>
 
     </div>
 
-    <div class="mt-8 bg-blue-50 border border-blue-100 rounded-2xl p-5">
+    <!-- Instruction -->
 
-      <div class="flex items-start gap-3">
+    <div class="mt-8 bg-blue-50 border border-blue-100 rounded-3xl p-5">
 
-        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center shrink-0">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-6 h-6 text-blue-600">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <div class="flex items-start gap-4">
+
+        <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center shrink-0">
+
+          <svg xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.8"
+            stroke="currentColor"
+            class="w-7 h-7 text-blue-600">
+
+            <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6v6l4 2" />
+
+            <path stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 12a9 9 0 11-18 0
+              9 9 0 0118 0z" />
+
           </svg>
+
         </div>
 
         <div>
-          <h3 class="font-semibold text-blue-700 text-lg">Payment Instruction</h3>
 
-          <p class="text-gray-600 text-sm leading-6 mt-2">
-            Please send money using <span class="font-semibold">Send Money</span> option.
-            <br>
-            Write your name in the reference/message section after payment.
+          <h3 class="font-bold text-blue-700 text-xl">
+            পেমেন্ট নির্দেশনা
+          </h3>
+
+          <p class="text-gray-600 text-[15px] leading-7 mt-3">
+
+            অনুগ্রহ করে <span class="font-semibold">Send Money</span>
+            অপশন ব্যবহার করে পেমেন্ট সম্পন্ন করুন।
+
+            <br><br>
+
+            পেমেন্ট করার পরে Reference / Message অপশনে আপনার নাম লিখে দিতে পারেন।
+
           </p>
+
         </div>
 
       </div>
 
     </div>
 
-    <div class="mt-8 grid grid-cols-3 gap-3">
+    <!-- Volunteer -->
 
-     
+    <div class="mt-8 bg-red-50 border border-red-100 rounded-3xl p-5">
+
+      <h3 class="font-bold text-red-600 text-xl">
+        টাকা দিয়েই শুধু সাহায্য নয়
+      </h3>
+
+      <div class="mt-4 space-y-3 text-gray-700 text-[15px]">
+
+        <div>• রক্তদাতা হিসেবে রেজিস্টার করে</div>
+        <div>• অ্যাপটি বন্ধুদের সাথে শেয়ার করে</div>
+        <div>• জরুরি রোগীদের সাহায্য করে</div>
+        <div>• অন্যদের রক্তদানে উৎসাহিত করে</div>
+
+      </div>
 
     </div>
 
-    <div class="mt-8 text-center text-xs text-gray-400 leading-5">
-      Thank you for supporting this project ❤️
+    <!-- Quran -->
+
+    <div class="mt-8 bg-green-50 border border-green-100 rounded-3xl p-5 text-center">
+
+      <p class="text-green-700 leading-8 font-medium text-[16px]">
+
+        “যে ব্যক্তি একটি প্রাণ বাঁচায়,
+        সে যেন সমগ্র মানবজাতিকেই বাঁচালো।”
+
+      </p>
+
+      <p class="text-green-500 text-sm mt-2">
+        — সূরা মায়িদাহ ৫:৩২
+      </p>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="mt-8 text-center">
+
+      <p class="text-gray-500 text-sm leading-7">
+
+    আপনার ভালোবাসা এবং সহযোগিতাই আমাদের এগিয়ে যাওয়ার অনুপ্রেরণা। 
+        <br>
+
+        একসাথে আমরা আরও অনেক মানুষের জীবন বাঁচাতে পারি।
+
+      </p>
+
     </div>
 
   </div>
 
   <script>
+
     function copyText(text) {
+
       navigator.clipboard.writeText(text);
-      alert('Number copied successfully!');
+
+        alert('নাম্বার কপি হয়েছে ');
     }
+
   </script>
 
 </body>
